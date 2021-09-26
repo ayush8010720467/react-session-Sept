@@ -12,7 +12,7 @@ function App() {
   }
  const getCards = ()=>{
     return card.map((elem, i)=>{
-      return (<Card key={i}>{i}</Card>)
+      return (<li className='list'><Card key={i}>{i}</Card></li>)
   })
   }
     
@@ -21,7 +21,10 @@ function App() {
       <Button styling="createBtn" performOp={appendcard}>
         +
       </Button>
+      <ul>
       {getCards()}
+      </ul>
+      
     </div>
   );
 }

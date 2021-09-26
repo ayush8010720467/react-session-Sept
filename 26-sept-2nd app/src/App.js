@@ -10,17 +10,18 @@ function App() {
     updateCards(card.length+1);
     console.log(card.length)
   }
+ const getCards = ()=>{
+    return card.map((elem, i)=>{
+      return (<Card key={i}>{i}</Card>)
+  })
+  }
     
   return (
     <div className="App App-header">
       <Button styling="createBtn" performOp={appendcard}>
         +
       </Button>
-      {card.map((elem, i)=>{
-          console.log(elem)
-          return <Card key={i}></Card>
-      })}
-      {/* {card} */}
+      {getCards()}
     </div>
   );
 }

@@ -1,0 +1,13 @@
+.primaryBtn{
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+}
+.secBtn{
+    border: 1px solid White;
+    color: white;
+    background-color: black;
+}
+button{
+    font-size: 50px;
+}
